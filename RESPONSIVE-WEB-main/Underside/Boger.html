@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Bibliotek DK</title>
+
+    <meta name="title" content="Bibliotek DK">
+    <meta name="description" content="På Bibliotek.dk kan du søge og bestille bøger, artikler, film, musik, spil og noder fra alle offentlige biblioteker i Danmark. Du kan også finde aktuelle nyheder, tips og vejledning om bibliotek og litteratur.">
+    <meta name="keywords" content="Bibliotek, Bøger, Musik, Film, Spil">
+    <meta name="robots" content="noindex, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Karoline E. Hansen, Liv Friman og Somayeh">
+
+    <link rel="stylesheet" href="../css/css.css">
+</head>
+
+<body>
+    <!-- logo -->
+    <a href="../index.html">
+        <div class="logo">
+            <img src="../Forside/images/logo.png" alt="bogtræ" width="100" id="logo">
+        </div>
+    </a>
+
+    <!-- menu -->
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">
+            <!-- Hamburger icon - tre linjer -->
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="../index.html">Log in</a></li>
+                <li><a href="../Underside/Boger.html">Bøger</a>
+                    <ul>
+                        <li><a href="../Underside/Boger.html">Bøger</a></li>
+                        <li><a href="#" onclick="popup()">Lydbøger</a></li>
+                        <li><a href="#" onclick="popup()">E-bøger</a></li>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="popup()">Film</a></li>
+                <li><a href="#" onclick="popup()">Musik</a></li>
+                <li><a href="#" onclick="popup()">Spil</a></li>
+                <li><a href="#" onclick="popup()">Aktiviteter</a></li>
+                <li><a href="#" onclick="popup()">Anbefalinger</a>
+                    <ul>
+                        <li><a href="#" onclick="popup()">Læsestof</a></li>
+                        <li><a href="#" onclick="popup()">Quizzer</a></li>
+                        </li>
+                    </ul>
+            </ul>
+        </nav>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Bøger</a>
+                    <ul>
+                        <li><a href="../Underside/Boger.html">Bøger</a></li>
+                        <li><a href="#" onclick="popup()">Lydbøger</a></li>
+                        <li><a href="#" onclick="popup()">E-bøger</a></li>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="popup()">Film</a></li>
+                <li><a href="#" onclick="popup()">Musik</a></li>
+                <li><a href="#" onclick="popup()">Spil</a></li>
+                <li><a href="#" onclick="popup()">Aktiviteter</a></li>
+                <li><a href="#" onclick="popup()">Anbefalinger</a>
+                    <ul>
+                        <li><a href="#" onclick="popup()">Læsestof</a></li>
+                        <li><a href="#" onclick="popup()">Quizzer</a></li>
+                        </li>
+                    </ul>
+            </ul>
+        </nav>
+    
+       
+
+    <!-- brugerlogo -->
+        <a href="../Underside/Bruger.html">
+            <div class="brugerlogo">
+            <img src="../Forside/images/brugerlogo.png" id="bruger" alt="Brugerlogo">
+        
+            <!--<h1>Bruger icon</h1>-->
+            </div>
+        </a>
+    </header>
+
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Alle</button>
+        <button class="btn" onclick="filterSelection('cars')"> Fiktion</button>
+        <button class="btn" onclick="filterSelection('animals')"> Fakta</button>
+        <button class="btn" onclick="filterSelection('fruits')"> Fantasy</button>
+        <button class="btn" onclick="filterSelection('colors')"> Studebøger</button>
+    </div>
+      
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+    
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="adam">
+                <a href="#" onclick="popup2()">
+                    <img src="../Forside/images/bog1.webp" alt="drømmebog" id="dagensbog">
+                </a>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="adam"> 
+                <h2>Opret dit drømme liv</h2>
+                <h4>sofie kristansien</h4>  
+                            
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="adam">
+                <a href="#" onclick="popup2()">
+                    <img src="../Forside/images/bog2.webp" alt="fantasibog" id="dagensbog">
+                </a>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="adam"> 
+                <h2>Magi til fantasien kommer til virkeligheden</h2>
+                <h4>linus matiasen knud</h4>  
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="adam">
+                <a href="#" onclick="popup2()">
+                    <img src="../Forside/images/dagensbog.png" alt="dagensbog" id="dagensbog">
+                </a>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="adam"> 
+                <h2>Bibliotekets Hemmeligheder</h2>
+                <h4>Per Larsen</h4>  
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="adam">
+                <a href="#" onclick="popup2()">
+                    <img src="../Forside/images/bog1.webp" alt="drømmebog" id="dagensbog">
+                </a>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="adam"> 
+                <h2>Opret dit drømme liv</h2>
+                <h4>sofie kristansien</h4>  
+                            
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="adam">
+                <a href="#" onclick="popup2()">
+                    <img src="../Forside/images/bog2.webp" alt="fantasibog" id="dagensbog">
+                </a>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="adam"> 
+                <h2>Magi til fantasien kommer til virkeligheden</h2>
+                <h4>linus matiasen knud</h4>  
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="adam">
+                <a href="#" onclick="popup2()">
+                    <img src="../Forside/images/dagensbog.png" alt="dagensbog" id="dagensbog">
+                </a>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="adam"> 
+                <h2>Bibliotekets Hemmeligheder</h2>
+                <h4>Per Larsen</h4>  
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="adam">
+                <a href="#" onclick="popup2()">
+                    <img src="../Forside/images/bog1.webp" alt="drømmebog" id="dagensbog">
+                </a>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="adam"> 
+                <h2>Opret dit drømme liv</h2>
+                <h4>sofie kristansien</h4>  
+                            
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="adam">
+                <a href="#" onclick="popup2()">
+                    <img src="../Forside/images/bog2.webp" alt="fantasibog" id="dagensbog">
+                </a>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="adam"> 
+                <h2>Magi til fantasien kommer til virkeligheden</h2>
+                <h4>linus matiasen knud</h4>  
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="adam">
+                <a href="#" onclick="popup2()">
+                    <img src="../Forside/images/dagensbog.png" alt="dagensbog" id="dagensbog">
+                </a>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="adam"> 
+                <h2>Bibliotekets Hemmeligheder</h2>
+                <h4>Per Larsen</h4>  
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+           <div class="footer-logo">
+                <li>
+                    <a href="../index.html">
+                        <img src="../Forside/images/logo.png" alt="bogtræ" id="flogo">
+                    </a>
+                </li>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                <li><a href="../index.html">Hjem</a></li>
+                <li><a href="#" onclick="popup()">Om os</a></li>
+                <li><a href="#" onclick="popup()">Kontakt os</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4> Kontakt os</h4>
+                <ul>
+                    <li><a href="#" onclick="popup()">TLF: 33 92 33 00</a></li>
+                    <li><a href="#" onclick="popup()">Hjælp og vejledning</a></li>
+                    <li><a href="#" onclick="popup()">privatlivspolitik</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- tilbage til toppen knap -->
+        <div class="footer-bottom">
+            <a href="#" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>  
+
+    <script src="./boger.java"></script>
+
+    <!-- java for popup -->
+    <script>
+        function popup() {
+            alert("Denne funktion er desværre ikke implementeret endnu");
+           }
+    </script>
+        
+    <!-- java for popup -->
+    <script>
+        function popup2() {
+            alert("Bogen er desværre ikke lagt ind i systemet endnu");
+        }
+    </script>
+        
+</body>
+</html>

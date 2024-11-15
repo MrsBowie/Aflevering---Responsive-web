@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="da">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bibliotek DK</title>
+
+    <meta name="title" content="Bibliotek DK">
+    <meta name="description" content="På Bibliotek.dk kan du søge og bestille bøger, artikler, film, musik, spil og noder fra alle offentlige biblioteker i Danmark. Du kan også finde aktuelle nyheder, tips og vejledning om bibliotek og litteratur.">
+    <meta name="keywords" content="Bibliotek, Bøger, Musik, Film, Spil">
+    <meta name="robots" content="noindex, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Karoline E. Hansen, Liv Friman og Somayeh">
+
+    <link rel="stylesheet" href="../css/css.css">
+</head>
+
+<body>
+    <!-- logo -->
+    <a href="../index.html">
+        <div class="logo">
+            <img src="../Forside/images/logo.png" alt="bogtræ" width="100" id="logo">
+        </div>
+    </a>
+
+    <!-- menu -->
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">
+            <!-- Hamburger icon - tre linjer -->
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="#" onclick="popup()">Log in</a></li>
+                <li><a href="../Underside/Boger.html">Bøger</a>
+                    <ul>
+                        <li><a href="../Underside/Boger.html">Bøger</a></li>
+                        <li><a href="#" onclick="popup()">Lydbøger</a></li>
+                        <li><a href="#" onclick="popup()">E-bøger</a></li>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="popup()">Film</a></li>
+                <li><a href="#" onclick="popup()">Musik</a></li>
+                <li><a href="#" onclick="popup()">Spil</a></li>
+                <li><a href="#" onclick="popup()">Aktiviteter</a></li>
+                <li><a href="#" onclick="popup()">Anbefalinger</a>
+                    <ul>
+                        <li><a href="#" onclick="popup()">Læsestof</a></li>
+                        <li><a href="#" onclick="popup()">Quizzer</a></li>
+                        </li>
+                    </ul>
+            </ul>
+        </nav>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" onclick="popup()">Log in</a></li>
+                <li><a href="#">Bøger</a>
+                    <ul>
+                        <li><a href="../Underside/Boger.html">Bøger</a></li>
+                        <li><a href="#" onclick="popup()">Lydbøger</a></li>
+                        <li><a href="#" onclick="popup()">E-bøger</a></li>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="popup()">Film</a></li>
+                <li><a href="#" onclick="popup()">Musik</a></li>
+                <li><a href="#" onclick="popup()">Spil</a></li>
+                <li><a href="#" onclick="popup()">Aktiviteter</a></li>
+                <li><a href="#" onclick="popup()">Anbefalinger</a>
+                    <ul>
+                        <li><a href="#" onclick="popup()">Læsestof</a></li>
+                        <li><a href="#" onclick="popup()">Quizzer</a></li>
+                        </li>
+                    </ul>
+            </ul>
+        </nav>
+    
+        <!-- brugerlogo -->
+        <a href="../Underside/Bruger.html">
+            <div class="brugerlogo">
+            <img src="../Forside/images/brugerlogo.png" id="bruger" alt="Brugerlogo">
+        
+            <!--<h1>Bruger icon</h1>-->
+            </div>
+        </a>
+    </header>
+
+    <main class="dinbruger">
+        <h2>
+            Din Bruger 
+            <br>
+        </h2>
+
+        <h3>
+            <br>
+            Her skulle din bruger have været. <br>
+            Du ville skulle kunne redigere i ting som din Email, telefonnummer, deltagelse i arrangementer osv, <br>
+            på denne side, samt se hvilke bøger du har lånt og skal aflevere.<br>
+            <br>
+            På siden ville du kunne se mere om hvad du har læst før, <br> 
+            om der er nogle gerbyre du mangler at betale, <br>
+            og noget om hvilke bøger der måske kunne interrassere dig. <br>
+            <br>
+            Alt dette kan du desværre ikke endnu, da siden og den manglende database, <br>
+            desværre ikke er blevet optrettet endnu. <br>
+            <br>
+            Med venlig hilsen, <br>
+            bibliotek.dk <br>
+        </h3>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+           <div class="footer-logo">
+           <li>
+                <a href="../index.html">
+                    <img src="../Forside/images/logo.png" alt="trælogobog" id="flogo">
+                </a>
+            </li>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                <li><a href="../index.html">Hjem</a></li>
+                <li><a href="#" onclick="popup()">Om os</a></li>
+                <li><a href="#" onclick="popup()">Kontakt os</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4> Kontakt os</h4>
+                <ul>
+                    <li><a href="#" onclick="popup()">TLF: 33 92 33 00</a></li>
+                    <li><a href="#" onclick="popup()">Hjælp og vejledning</a></li>
+                    <li><a href="#" onclick="popup()">privatlivspolitik</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- tilbage til toppen knap -->
+        <div class="footer-bottom">
+            <a href="#" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>  
+         
+    <!-- java for popup -->
+    <script>
+        function popup() {
+            alert("Denne funktion er desværre ikke implementeret endnu");
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="da">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bibliotek DK</title>
+
+    <meta name="title" content="Bibliotek DK">
+    <meta name="description" content="På Bibliotek.dk kan du søge og bestille bøger, artikler, film, musik, spil og noder fra alle offentlige biblioteker i Danmark. Du kan også finde aktuelle nyheder, tips og vejledning om bibliotek og litteratur.">
+    <meta name="keywords" content="Bibliotek, Bøger, Musik, Film, Spil">
+    <meta name="robots" content="noindex, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Karoline E. Hansen, Liv Friman og Somayeh">
+
+    <link rel="stylesheet" href="./css/css.css">
+    <script src="./java.java"></script>
+
+   </head>
+
+
+<body>
+    <!-- logo -->
+    <a href="#">
+        <div class="logo">
+            <img src="./Forside/images/logo.png" alt="bogtræ" width="100" id="logo">
+        </div>
+    </a>
+
+    <!-- menu -->
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">
+            <!-- Hamburger icon - tre linjer -->
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="#" onclick="popup()">Log in</a></li>
+                <li><a href="./Underside/Boger.html">Bøger</a>
+                    <ul>
+                        <li><a href="./Underside/Boger.html">Bøger</a></li>
+                        <li><a href="#" onclick="popup()">Lydbøger</a></li>
+                        <li><a href="#" onclick="popup()">E-bøger</a></li>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="popup()">Film</a></li>
+                <li><a href="#" onclick="popup()">Musik</a></li>
+                <li><a href="#" onclick="popup()">Spil</a></li>
+                <li><a href="#" onclick="popup()">Aktiviteter</a></li>
+                <li><a href="#" onclick="popup()">Anbefalinger</a>
+                    <ul>
+                        <li><a href="#" onclick="popup()">Læsestof</a></li>
+                        <li><a href="#" onclick="popup()">Quizzer</a></li>
+                        </li>
+                    </ul>
+            </ul>
+        </nav>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" onclick="popup()">Log in</a></li>
+                <li><a href="#">Bøger</a>
+                    <ul>
+                        <li><a href="./Underside/Boger.html">Bøger</a></li>
+                        <li><a href="#" onclick="popup()">Lydbøger</a></li>
+                        <li><a href="#" onclick="popup()">E-bøger</a></li>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="popup()">Film</a></li>
+                <li><a href="#" onclick="popup()">Musik</a></li>
+                <li><a href="#" onclick="popup()">Spil</a></li>
+                <li><a href="#" onclick="popup()">Aktiviteter</a></li>
+                <li><a href="#" onclick="popup()">Anbefalinger</a>
+                    <ul>
+                        <li><a href="#" onclick="popup()">Læsestof</a></li>
+                        <li><a href="#" onclick="popup()">Quizzer</a></li>
+                        </li>
+                    </ul>
+            </ul>
+        </nav>
+    
+        <!-- brugerlogo -->
+        <a href="./Underside/Bruger.html">
+            <div class="brugerlogo">
+            <img src="./Forside/images/brugerlogo.png" id="bruger" alt="Brugerlogo">
+        
+            <!--<h1>Bruger icon</h1>-->
+            </div>
+        </a>
+    </header>
+
+    <div class="image-container">
+        <img src="./Forside/images/stortbillede.png" alt="Topbillede">
+    </div>
+
+    <!-- beginning on image carousel -->
+     
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="./Forside/images/image1.png" style="width:100%" alt="bibliotek">
+        </div>
+      
+        <div class="mySlides fade">
+            <img src="./Forside/images/image2.png" style="width:100%" alt="bibliotekskrog">
+        </div>
+      
+        <div class="mySlides fade">
+            <img src="./Forside/images/image3.png" style="width:100%" alt="afkrogafbibliotek"> 
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+        </div>
+        <br>
+      
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div> 
+    </div>        
+    <!-- End of image carousel -->
+
+    
+   <!-- beginning of 2 column responsiv  -->
+    
+    <div class="container">
+        <div class="box">
+            <a href="#" onclick="popup()">
+                <img src="./Forside/images/dagensbog.png" alt="dagensbog" id="dagensbog">
+            </a>
+        </div>
+
+        <div class="box"> 
+            <br>
+            <h4>Per Larsen:</h4> <br>
+            <h2>Bibliotekets Hemmeligheder</h2> <br>
+            <p> <em>Bibliotekets Hemmeligheder </em> 
+                er en indsigtsfuld og inspirerende bog, 
+                der udforsker de dybt skjulte historier og glemte skatte, 
+                som ligger gemt på de støvede hylder og i de gamle, 
+                til tider forfaldne, bind, der har været vidner til århundreders historie. 
+                Med respekt og nysgerrighed fører denne bog læseren på en fascinerende rejse gennem tid og viden, 
+                hvor hvert kapitel åbner en ny dør til en verden af fortryllende visdom og fortællinger, 
+                som kun et bibliotek i al dets pragt kan rumme. 
+                Her præsenteres ikke blot bøgernes historie, men også de hemmelige historier om dem, 
+                der gennem tiden har værnet om og bidraget til denne vidensskat. 
+                I et samspil mellem fortid og nutid afslører Bibliotekets Hemmeligheder den uvurderlige betydning,
+                biblioteker har haft i oplysningens og kulturens navn, og den unikke magi, som opstår i disse tidløse haller.
+            </p>  
+        </div>
+    </div>
+
+    <!-- End of 2 column responsive -->
+    
+    <!-- Divider -->
+    <div class="divider"></div>
+    
+    <!-- Nyhedsbrevstilmelding -->
+    <div class="newsletter-box">
+        <h2>Tilmeld dig nyhedsbrevet</h2>
+        <div class="name-fields">
+            <input type="text" placeholder="Fornavn" required>
+            <input type="text" placeholder="Efternavn" required>
+        </div>
+        <input type="email" placeholder="Email" required>
+        <br>
+        <a href="./Forside/Nyhedsbrev.html">
+        <button type="submit">Tilmeld</button>
+        </a>
+    </div>
+    <!-- slut nyhedsbrev -->
+
+    <footer>
+        <div class="footer-container">
+           <div class="footer-logo">
+                <li>
+                    <a href="index.html">
+                        <img src="./Forside/images/logo.png" alt="trælogobog" id="flogo">
+                    </a>
+                </li>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="#" onclick="popup()">Om os</a></li>
+                    <li><a href="#" onclick="popup()">Kontakt os</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4> Kontakt os</h4>
+                <ul>
+                    <li><a href="#" onclick="popup()">TLF: 33 92 33 00</a></li>
+                    <li><a href="#" onclick="popup()">Hjælp og vejledning</a></li>
+                    <li><a href="#" onclick="popup()">privatlivspolitik</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- tilbage til toppen knap -->
+        <div class="footer-bottom">
+            <a href="#" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>  
+
+    <!-- Java for billed carusel (de tre skiftende billeder)-->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+
+        function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("open"); // Tilføjer eller fjerner "open"-klassen
+        } 
+    </script>
+         
+    <!-- java for popup -->
+    <script>
+        function popup() {
+            alert("Denne funktion er desværre ikke implementeret endnu");
+        }
+    </script>
+    
+</body>
+</html>

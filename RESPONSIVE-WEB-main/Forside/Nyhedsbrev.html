@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/css.css">
+    <script src="../java.java"></script>
+</head>
+<body>
+    <!-- logo -->
+    <a href="../index.html">
+        <div class="logo">
+            <img src="./images/logo.png" alt="bogtræ" width="100" id="logo">
+        </div>
+    </a>
+
+    <!-- menu -->
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">
+            <!-- Hamburger icon - tre linjer -->
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="../Underside/Boger.html">Bøger</a>
+                    <ul>
+                        <li><a href="../Underside/Boger.html">Bøger</a></li>
+                        <li><a href="#">Lydbøger</a></li>
+                        <li><a href="#">E-bøger</a></li>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Film</a></li>
+                <li><a href="#">Musik</a></li>
+                <li><a href="#">Spil</a></li>
+                <li><a href="#">Aktiviteter</a></li>
+                <li><a href="#">Anbefalinger</a>
+                    <ul>
+                        <li><a href="#">Læsestof</a></li>
+                        <li><a href="#">Quizzer</a></li>
+                        </li>
+                    </ul>
+            </ul>
+        </nav>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Bøger</a>
+                    <ul>
+                        <li><a href="../Underside/Boger.html">Bøger</a></li>
+                        <li><a href="#">Lydbøger</a></li>
+                        <li><a href="#">E-bøger</a></li>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Film</a></li>
+                <li><a href="#">Musik</a></li>
+                <li><a href="#">Spil</a></li>
+                <li><a href="#">Aktiviteter</a></li>
+                <li><a href="#">Anbefalinger</a>
+                    <ul>
+                        <li><a href="#">Læsestof</a></li>
+                        <li><a href="#">Quizzer</a></li>
+                        </li>
+                    </ul>
+            </ul>
+        </nav>
+    
+        <!-- brugerlogo -->
+        <a href="../Underside/Bruger.html">
+            <div class="brugerlogo">
+            <img src="images/brugerlogo.png" id="bruger" alt="Brugerlogo">
+        
+            <!--<h1>Bruger icon</h1>-->
+            </div>
+        </a>
+    </header>
+
+    <main class="nyhedsbrev">
+        <h2>
+            Kære nyhedsbrevsmodtager <br>
+        </h2>
+
+        <h3>
+            <br>
+            Tak for, at du har tilmeldt dig bibliotek.dk's nyhedsbrev! <br>
+            Vi er glade for at kunne holde dig opdateret på de nyeste bøger, <br>
+            arrangementer og spændende tilbud fra bibliotekerne i hele landet.<br>
+            <br>
+            Som abonnent vil du få inspiration til din næste læseoplevelse, <br> 
+            tips til brug af vores digitale ressourcer og opdateringer om de nyeste tiltag og services. <br>
+            Vi glæder os til at dele alt dette med dig og håber, <br>
+            at vores nyhedsbrev bliver en værdifuld kilde til inspiration og information. <br>
+            <br>
+            Tak fordi du er med på rejsen! <br>
+            <br>
+            Med venlig hilsen, <br>
+            bibliotek.dk <br>
+        </h3>
+    </main>
+
+    
+    <footer>
+        <div class="footer-container">
+           <div class="footer-logo">
+           <li>
+            <a href="../index.html">
+                 
+                <img src="images/logo.png" alt="trælogobog" id="flogo">
+            
+            </a>
+            </li>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                <li><a href="../index.html">Hjem</a></li>
+                <li><a href="#" onclick="popup()">Om os</a></li>
+                <li><a href="#" onclick="popup()">Kontakt os</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4> Kontakt os</h4>
+                <ul>
+                    <li><a href="#" onclick="popup()">TLF: 33 92 33 00</a></li>
+                    <li><a href="#" onclick="popup()">Hjælp og vejledning</a></li>
+                    <li><a href="#" onclick="popup()">privatlivspolitik</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- tilbage til toppen knap -->
+        <div class="footer-bottom">
+            <a href="#" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>  
+    
+    <!-- java for popup -->
+    <script>
+        function popup() {
+            alert("Denne funktion er desværre ikke implementeret endnu");
+        }
+    </script>
+    
+</body>
+</html>

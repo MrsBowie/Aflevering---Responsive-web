@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --baige:#f8f2ec;
+    --darkbaige:#f2e6d9;
+    --white:#ffffff;
+    --black:#000000;
+    --lightgreen:#c6ebd9;
+    --lgreen:#b3ffb3;
+    --orange:#ffdab3;
+    --lightpink:#ffe6e6;
+    --pink:#ffcccc;
+    --brown:#e6ccb3;
+    --darkbrown:#d0b8a7;
+    --brownish:#725f50;
+    --bodo:#6b2e2e;
+    --darkbodo:#553b39;
+    --gray:#333;
+}
+
+body {
+    background-color: var(--darkbaige); 
+    font-family: Arial, sans-serif;
+}
+
+/* links */
+a {
+    color: var(--black); 
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--bodo); 
+}
+
+/* Header/menu bar */
+header {
+    background: var(--lightpink); 
+    box-shadow: 0 5px 10px var(--gray);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    margin-bottom: 15px;
+
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    background-color: var(--baige);
+}
+
+#logo {
+    width: 10%;
+    height: auto;
+}
+
+.brugerlogo {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/The_logo.png); 
+    height: 100px;
+    width: 100px;
+    padding: 20%;
+    margin-right: 20px;
+}
+
+#bruger {
+    width: 100px;
+    margin-left: 10px;
+}
+
+header .logo {
+    height: 10px;
+    margin-left: 10px
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    font-size: 23px;
+    padding: 18px;
+    color: var(--black); 
+    display: block; 
+}
+
+header .navbar ul li a:hover {
+    background: var(--pink); 
+    color: var(--darkbodo);
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: var(--darkbrown);
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid var(--black);
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: block;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: var(--bodo); 
+    cursor: pointer;
+    display: none;
+}
+
+/* banner billede */
+.image-container {
+    width: 100%;
+    height: auto; /* Højden vil automatisk justere sig baseret på indholdet */
+}
+
+.image-container img {
+    width: 97%;
+    height: auto; /* Bevarer billedets proportioner */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* dagens bog */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--darkbaige); 
+
+    overflow: hidden;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.box {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 3px solid var(--brown); 
+    text-align: left;
+    background-color: var(--baige); 
+    font-size: 25px;
+}
+
+.box img {
+    max-width: 80%;
+    height: auto;
+}
+
+/*  streg hen over skærmen*/
+.divider {
+    margin: 20px 0;
+    border-top: 2px solid var(--bodo); 
+    width: 100%;
+}
+
+/* nyhedsbrev og brugerside */
+.nyhedsbrev,
+.dinbruger {
+    border: 3px solid var(--black);
+    background-color: var(--baige);
+    text-align: center;
+    margin: 3%;
+}
+
+/* nyhedsbrevstilmelding */
+.newsletter-box {
+    width: auto;
+    padding: 20px;
+    border: 1px solid var(--white);
+    text-align: center;
+    margin: 20px;
+    background-color: var(--lightpink); 
+}
+.newsletter-box input[type="text"],
+.newsletter-box input[type="email"] {
+    width: 20%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+}
+.name-fields {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+.name-fields input[type="text"] {
+    width: 20%;
+}
+.newsletter-box button {
+    width: 20%;
+    padding: 10px 20px;
+    background-color: var(--bodo); 
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.newsletter-box button:hover {
+    background-color: var(--darkbodo); 
+}
+
+/* footeren */
+footer {
+    background-color: var(--brownish); 
+    color: var(--white);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 250px;
+    height: auto;
+}
+
+.footer-links, .footer-social {
+    text-align: left;
+}
+
+.footer-links h4, .footer-social h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li, .footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a, .footer-social ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+}
+
+.footer-links ul li a:hover, .footer-social ul li a:hover {
+    color: var(--gray); 
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--white);
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+/* lige iunder footer*/
+.back-to-top {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+}
+
+.back-to-top:hover {
+    color: var(--gray); 
+}
+
+#flogo {
+    border: 4px solid var(--gray);
+    background-color: var(--baige);
+    border-radius: 50%;
+}
+
+/* Beginning of styling image carousel*/
+ 
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+ margin-top: 2%;
+  position: relative;
+  width: 70%;
+  height: 50%;
+  margin-left: 15%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 2%;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 100%;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px 10px 10px 10px;
+  background-color: var(--gray);
+  color:var(--white);
+  margin-right: 1%;
+}
+
+.prev {
+    color:var(--white);
+    background-color: var(--gray);
+    margin-left: 1%;
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: var(--black);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: var(--gray);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+/* når mindre skærme skifter "header" om til "menu"*/
+
+/* Styling af header til mindre skærme*/
+/* Hamburger ikon styling */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--bodo);
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Menu styling */
+.menu {
+    display: none; /* Skjuler menu som standard */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--baige);
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li a {
+    color: var(--black);
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: var(--brownish);
+}
+
+.menu ul li ul { position: absolute;
+    width: 200px;
+    display: none;
+}
+.menu ul li ul li {
+    width: 100%;
+}
+
+/* Viser menuen når "open" klassen er tilføjet */
+.menu.open {
+    display: flex;
+}
+ /* End of image carousel */
+
+
+
+/* boger css*/
+ .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /*background-color: #2196F3;*/
+    padding: 10px;
+  }
+  .grid-item {
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    /*border: 1px solid rgba(0, 0, 0, 0.8);
+    */
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .adam {
+    width: auto;
+    height: auto;
+    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: 0px solid var(--lgreen); 
+    text-align: left;
+    /*background-color: var(--gray); */
+}
+
+.adam img {
+    max-width: 100%;
+    height: auto;
+}
+
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: var(--baige);
+    cursor: pointer;
+  }
+  
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color: var(--pink);
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: var(--brown);
+    color: var(--black)
+}
+
+
+ /* tablet responsive */
+@media (max-width: 1024px) {
+    .container {
+        font-size: 15px;
+    }
+
+    .hamburger {
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        /*background-color: #2196F3;*/
+        padding: 10px;
+      }
+      #logo {
+        width: 15%;
+        height: auto;
+    }
+    .box {
+   
+        font-size: 17px;
+        }  
+        .newsletter-box input[type="text"],
+        .newsletter-box input[type="email"] {
+            width: 40%;
+           
+        }
+        
+        .name-fields input[type="text"] {
+            width: 40%;
+        }
+        .newsletter-box button {
+            width: 40%;
+           
+        }
+    }
+
+    /* Telefon responsive */    
+    @media (max-width: 430px) {
+      
+    .box {
+   
+    font-size: 8px;
+    }  
+
+    .box img {
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+        
+    }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto;
+            /*background-color: #2196F3;*/
+            padding: 10px;
+          }
+          .adam img {
+            max-width: 70%;
+            height: auto;
+            min-width: 50px;
+            justify-content: center;
+        }
+        .grid-item {
+            /*background-color: rgba(255, 255, 255, 0.8);*/
+            /*border: 1px solid rgba(0, 0, 0, 0.8);
+            */
+            padding: 20px;
+            font-size: 150%;
+            text-align: center;
+          }
+
+          .newsletter-box input[type="text"],
+.newsletter-box input[type="email"] {
+    width: 50%;
+   
+}
+
+.name-fields input[type="text"] {
+    width: 50%;
+}
+.newsletter-box button {
+    width: 50%;
+   
+}
+#logo {
+    width: 20%;
+    height: auto;
+}
+        }
